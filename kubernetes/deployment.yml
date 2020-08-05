@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: taegbae
-          image: username/taegbae:latest
+          image: 496278789073.dkr.ecr.ap-northeast-2.amazonaws.com/user26taegbae:v1
           ports:
             - containerPort: 8080
           resources:
