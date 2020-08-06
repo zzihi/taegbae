@@ -41,6 +41,17 @@ server:
 api:
   url:
     pay: http://localhost:8087
+
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    # 전역설정
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 610
+
 ---
 
 spring:
@@ -72,7 +83,7 @@ api:
 
 feign:
   hystrix:
-    enabled: true
+    enabled: false
 
 hystrix:
   command:
